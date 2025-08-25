@@ -1,0 +1,32 @@
+import requests
+
+def ip_lookup():
+    request = requests.get('https://httpbin.org/ip')
+    print(request.text)
+
+def base64_decode():
+    request = requests.get('https://httpbin.org/base64/SFRUUEJJTiBpcyBhd2Vzb21l')
+    print(request.text)
+
+def os_5_primeiros_json():
+    request = requests.get('https://httpbin.org/json')
+    data = request.json()
+    for i in range(0, 5):
+        print(i, data)
+
+def comments_get_post_ID():
+    request = requests.get('https://jsonplaceholder.typicode.com/comments?postId=1')
+    data = request.json()
+    for comment in data:
+        print(comment)
+    
+
+def main():
+    ip_lookup()
+    base64_decode()
+    os_5_primeiros_json()
+    comments_get_post_ID()
+
+if __name__ == "__main__":
+    main()
+
