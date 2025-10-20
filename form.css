@@ -1,0 +1,101 @@
+/* Estilos Gerais */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Principal */
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 380px;
+}
+
+.title {
+    color: #1c1e21;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+/* Grupos de Input (Rótulo + Campo) */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #606770;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+    font-size: 16px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1877f2;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #166fe5;
+}
+
+/* Container do Resultado */
+.resultado-container {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    min-height: 60px; /* Evita que o layout "pule" */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Organiza o resultado em linhas */
+    line-height: 1.5;
+}
+
+/* Estilos para o resultado (serão adicionados via JS) */
+.success {
+    background-color: #e7f3ff;
+    color: #1877f2;
+    border: 1px solid #bde0ff;
+}
+
+.error {
+    background-color: #ffebe8;
+    color: #c62828;
+    border: 1px solid #ffbdad;
+}
