@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML with Script</title>
+</head>
+<body>
+    <h1 onclick="ScrollToTroll()">Welcome to JavaScript Exercise</h1>
+    <p id="message"></p>
+    <button onclick="ChangeColor()">Don't Click Me</button>
+
+    <script>
+
+        function ScrollToTroll() {
+            window.scrollTo(0, document.body.scrollHeight);
+            document.body.style.backgroundImage = "url('https://media1.tenor.com/m/l700be2yNp0AAAAd/shocked-surprised.gif')";
+            document.getElementById("message").style.fontSize= "50px";
+            document.getElementById("message").innerHTML += "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            
+        }
+        function ChangeColor() {
+            document.getElementById("message").style.color = "red";
+            document.getElementById("message").innerHTML = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            document.getElementById("message").style.fontSize = "900px";
+            document.body.style.backgroundImage = "url('')";
+        }
+    </script>
+</body>
+</html>
