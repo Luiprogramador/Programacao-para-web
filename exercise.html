@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+
+    <style>
+        
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin-top: 20px;
+        }
+        .butao {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        .butao:hover {
+            background-color: #45a049;
+        }
+        .table {
+            width: 50%;
+            border-collapse: collapse;
+            border-width: 4px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercise Page</h1>
+    <p>Nome</p>
+    <a href="https://brazzarimports.com.br/wp-content/uploads/2023/08/LUI-Umile-Cabernet-Franc.png">Lui</a>
+    <img src="https://static.wikia.nocookie.net/hunter-x-hunter-fanon/images/8/85/Dogramag_Color.png" alt="test img">
+    <button class="butao">
+        <a href="https://hunter-x-hunter-fanon.fandom.com/wiki/Korag" style="text-decoration: none; color: black;">saiba mais!</a>
+    </button>
+    <br>
+    <button class="butao">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=1" style="text-decoration: none; color: black;">CLIQUE ASQUI!</a>
+    </button>
+
+    <ol>
+        <li>cavalo 1</li>
+        <li>cavalo 2
+            <ol>
+                <li>Subitem 2.1</li>
+                <li>Subitem 2.2</li>
+            </ol>
+        </li>
+        <li>Item 3</li>
+    </ol>
+
+    <table class="table" border="1">
+        <tr>
+            <th>Produto</th>
+            <th>Preco</tr>
+        </tr>
+        <tr>
+            <td>Notebook</td>
+            <td>R$ 3000,00</td>
+        </tr>
+        <tr>
+            <td>Smartphone</td>
+            <td>R$ 1500,00</td>
+        </tr>
+        <tr>
+            <td>Tablet</td>
+            <td>R$ 800,00</td>
+        </tr>
+    </table>
+    <form action="segunda_pagina.html">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="term">aceitar termo</label>
+        <input type="checkbox" id="term" name="term"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
